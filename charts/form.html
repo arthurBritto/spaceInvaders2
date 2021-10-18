@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Finantial program</title>
+</head>
+
+<body class=container>
+    <h1>Formulario de planejamento</h1>
+    <br><br>
+    <h2>Dados dos seus custos</h2><br>
+    <form action="" class="main-form needs-validation" novalidate>
+        <div>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Qual é o seu salário
+                    mensal?</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 1500" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Quanto dinheiro guardado
+                    você possui?</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 5000" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Você possui alguma dívida?
+                    Quanto você deve?</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 2000" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Quanto você precisa para
+                    viajar?</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 20000" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Você é capaz de gerar qual
+                    renda extra por mês?</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 300" required>
+                </div>
+            </div>
+
+            <br><br>
+            <h2>Total dos seus Custos Mensais</h2><br>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Custos não
+                    evitáveis</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 1500" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Evitáveis
+                    Débito</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 5000" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Evitáveis
+                    Crédito</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 2000" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Total
+                    evitáveis</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 20000" required>
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Quantos % dos
+                    evitáveis
+                    você pode economizar?</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 5000" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Total de evitáveis que
+                    você vai economizar</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 2000" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-8 col-form-label col-form-label-sm">Total de evitáveis que
+                    você vai poder gastar</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="Exemplo R$: 20000" required>
+                </div>
+            </div>
+            <br>
+            <button type="submit-btn" class="btn btn-block btn-outline-success"> Ver Avaliação</button>
+            <button type="submit-btn" class="btn btn-block"> cancelar</button>
+
+        </div>
+    </form>
+
+    <script>
+        var form = document.querySelector('.needs-validation');
+
+        form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        })
+    </script>
+    <br><br>
+    <br><br>
+
+</body>
+
+</html>
