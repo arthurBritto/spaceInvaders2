@@ -1,27 +1,906 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <title>Finantial program</title>
+	<title>Mentoria Financeira</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
 </head>
 
-<body>
+<body class="is-preload">
 
-  <div class="col-md-12">
-    <div class="col-md-6">
-      <canvas id="myChart1"></canvas>
-      <script type="module" src="js/credito.js"></script>
-    </div>
-    <div class="col-md-6">
-      <canvas id="myChart2"></canvas>
-      <script type="module" src="js/debito.js"></script>
-    </div>
-  </div>
+	<!-- Wrapper-->
+	<div id="wrapper">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="#home" class="icon solid fa-home"><span>Home</span></a>
+			<a href="#gastos-debito" class="icon solid fa-folder-open"><span>Form1</span></a>
+			<a href="#gastos-credito" class="icon solid fa-folder-open"><span>Form2</span></a>
+			<a href="#finantial-life" class="icon solid fa-folder-open"><span>Form3</span></a>
+			<a href="#resultados" class="icon solid fa-pen-alt"><span>Resultados</span></a>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Home -->
+			<article id="home" class="panel intro">
+				<header>
+					<h1>Mentoria Financeira</h1>
+					<p>Formulario de planejamento</p>
+					<br>
+					<p>Obrigado por fazer parte dessa rede!<br>A seguir você vai precisar preencher alguns formularios,
+						para que assim possamos analisar melhor a sua situação financeira e seguir com seu plano.</p>
+				</header>
+				</a>
+			</article>
+
+			<!-- Gastos Debito -->
+			<article id="gastos-debito" class="panel">
+				<header>
+					<h3>
+						</h>TODOS OS GASTOS NO CARTÃO DE DÉBITO EM 60 DIAS</h3>
+				</header>
+				<br>
+				<div>
+					<form class="finantial-freedom1">
+						<h5>GASTOS NÃO EVITÁVEIS:</h5>
+						<small class="form-text text-muted">>>> Preencha somente com numeros positivos</small>
+						<div class="gastosDebitoNaoEvitaveis">
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE01 form-control" type="number1" placeholder="Exemplo R$: 1500"
+									value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE02 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE03 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE04 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE05 form-control" type="number1" placeholder="Exemplo R$: 1500"
+									value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE06 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE07 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE08 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE09 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE10 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE11 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE12 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE13 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE14 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE15 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE16 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE17 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE18 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE19 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debNE20 form-control" type="number1" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+						</div><br><br>
+						<div>
+							<button type="submit" class="col-sm-12 btn btn-block btn-outline-success"> Enviar</button>
+						</div>
+					</form>
+				</div>
+				<div>
+					<br>
+					<form class="finantial-freedom2">
+						<h5>GASTOS EVITÁVEIS:</h5>
+						<small class="form-text text-muted">>>> Preencha somente com numeros positivos</small>
+						<div class="gastosDebitoEvitaveis">
+
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE01 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE02 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE03 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE04 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE05 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE06 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE07 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE08 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE09 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE10 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE11 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE12 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE13 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE14 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE15 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE16 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE17 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE18 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE19 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="debE20 form-control" type="number2" placeholder="Exemplo R$: 1500"
+										value="0">
+								</div>
+							</div>
+							<br><br>
+							<div>
+								<button type="submit" class="col-sm-12 btn btn-block btn-outline-success">
+									Enviar</button>
+								<br><a href="#gastos-credito" class="icon solid fa-arrow-right"><span> Form 2</span></a>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</article>
+
+			<!-- Gastos Credito -->
+			<article id="gastos-credito" class="panel">
+				<header>
+					<h3>TODOS OS GASTOS NO CARTÃO DE CRÉDITO EM 60 DIAS</h3>
+				</header>
+				<br>
+				<div>
+					<form class="finantial-freedom3">
+						<h5>GASTOS NÃO EVITÁVEIS:</h5>
+						<small class="form-text text-muted">>>> Preencha somente com numeros positivos</small>
+						<div lass="gastosCreditoNaoEvitaveis">
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE01 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE02 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE03 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE04 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE05 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE06 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE07 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE08 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE09 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE10 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE11 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE12 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE13 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE14 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE15 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE16 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE17 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE18 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE19 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credNE20 form-control" type="number3" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+						</div><br><br>
+						<div>
+							<button type="submit" class="col-sm-12 btn btn-block btn-outline-success"> Enviar</button>
+						</div>
+					</form>
+				</div>
+				<div>
+					<br>
+					<form class="finantial-freedom4">
+						<h5>GASTOS EVITÁVEIS:</h5>
+						<small class="form-text text-muted">>>> Preencha somente com numeros positivos</small>
+						<div class="gastosCreditoEvitaveis">
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE01 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE02 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE03 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE04 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE05 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE06 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE07 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE08 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE09 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE10 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE11 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE12 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE13 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE14 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE15 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE16 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE17 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE18 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE19 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<input class="credE20 form-control" type="number4" placeholder="Exemplo R$: 1500">
+								</div>
+							</div>
+							<br><br>
+							<div>
+								<button type="submit" class="col-sm-12 btn btn-block btn-outline-success">
+									Enviar</button>
+								<br><a href="#finantial-life" class="icon solid fa-arrow-right"><span> Form 3</span></a>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</article>
+
+			<!-- Finantial Life -->
+			<article id="finantial-life" class="panel">
+				<header>
+					<h1>Formulario de planejamento</h1>
+				</header>
+				<div>
+					<br>
+					<h2>Dados dos seus custos Gerais</h2>
+					<small class="form-text text-muted"> >>> Preencha somente com numeros positivos</small>
+					<br><br>
+				</div>
+				<form class="finantial-freedom5">
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm">Qual é o seu
+								salário mensal?</label>
+							<input class="answer01 form-control" type="number" placeholder="Exemplo R$: 1500" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm">Quanto
+								dinheiro guardado você possui?</label>
+							<input class="answer02 form-control" type="number" placeholder="Exemplo R$: 1500" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm">Você possui
+								alguma dívida? Quanto você deve?</label>
+							<input class="answer03 form-control" type="number" placeholder="Exemplo R$: 1500" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm">Quanto você
+								precisa para viajar?</label>
+							<input class="answer04 form-control" type="number" placeholder="Exemplo R$: 1500" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm">Você é capaz
+								de gerar qual renda extra por mês?</label>
+							<input class="answer05 form-control" type="number" placeholder="Exemplo R$: 1500" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm">Quantos % dos
+								evitáveis você pode economizar?</label>
+							<input class="answer06 form-control" type="number" placeholder="Exemplo de 0 a 100%"
+								required>
+						</div>
+					</div>
+					<br><br>
+					<div>
+						<button type="submit" class="col-sm-12 btn btn-block btn-outline-success"> Enviar</button>
+						<br><a href="#resultados" class="icon solid fa-arrow-right"><span> Resultados </span></a>
+					</div>
+				</form>
+			</article>
+
+			<!-- Resultados -->
+			<article id="resultados" class="panel">
+
+				<div class=" h2">
+					<div>Cálculos Viagem</div>
+				</div>
+				<br>
+				<div class="h4">
+					<div>Dinheiro que falta R$ <span id="money-remaining"></span></div>
+					<div>Economia por mês R$ <span id="month-save"></span> </div>
+					<div>Meses para viajar <span id="months-to-travel"></span> </div>
+				</div>
+
+				<br>
+
+				<div class="col-sm-12">
+					<canvas id="myChart1"></canvas>
+					<script type="module">
+
+						console.log(gastosDebitoEvitaveis);
+						console.log(gastosDebitoNaoEvitaveis);
+
+						let myChart1 = document.getElementById('myChart1').getContext('2d');
+
+						// Global Options
+						Chart.defaults.global.defaultFontFamily = 'Lato';
+						Chart.defaults.global.defaultFontSize = 17;
+						Chart.defaults.global.defaultFontColor = '#777';
+
+						let gastosDebito = new Chart(myChart1, {
+							type: 'doughnut',
+							data: {
+								labels: ['Evitáveis', 'Não Evitáveis'],
+								datasets: [{
+									label: 'Débito',
+									data: [
+										822,
+										333,
+									],
+									backgroundColor: [
+										'rgba(255, 99, 132, 0.6)',
+										'rgba(54, 162, 235, 0.6)',
+									],
+									borderWidth: 1,
+									borderColor: '#fff',
+									hoverBorderWidth: 3,
+									hoverBorderColor: '#000'
+								}]
+							},
+
+							options: {
+								title: {
+									display: true,
+									text: 'Gastos Débito ',
+									fontSize: 25
+								},
+								legend: {
+									display: true,
+									position: 'right',
+									labels: {
+										fontColor: '#000'
+									}
+								},
+								layout: {
+									padding: {
+										left: 15,
+										right: 15,
+										bottom: 0,
+										top: 20
+									}
+								},
+								tooltips: {
+									enabled: true
+								}
+							}
+						});
+
+					</script>
+
+					<canvas id="myChart2"></canvas>
+					<script type="module">
+						let myChart2 = document.getElementById('myChart2').getContext('2d');
+
+						// Global Options
+						Chart.defaults.global.defaultFontFamily = 'Lato';
+						Chart.defaults.global.defaultFontSize = 17;
+						Chart.defaults.global.defaultFontColor = '#777';
+
+						let gastosCredito = new Chart(myChart2, {
+							type: 'doughnut',
+							data: {
+								labels: ['Evitáveis', 'Não Evitáveis'],
+								datasets: [{
+									label: 'Crédito',
+									data: [
+										700,
+										1500,
+									],
+									backgroundColor: [
+										'rgba(255, 99, 132, 0.6)',
+										'rgba(54, 162, 235, 0.6)'
+									],
+									borderWidth: 1,
+									borderColor: '#fff',
+									hoverBorderWidth: 3,
+									hoverBorderColor: '#000'
+								}]
+							},
+
+							options: {
+								title: {
+									display: true,
+									text: 'Gastos Crédito',
+									fontSize: 25
+								},
+								legend: {
+									display: true,
+									position: 'right',
+									labels: {
+										fontColor: '#000'
+									}
+								},
+								layout: {
+									padding: {
+										left: 15,
+										right: 15,
+										bottom: 0,
+										top: 50
+									}
+								},
+								tooltips: {
+									enabled: true
+								}
+							}
+						});
+
+					</script>
+				</div>
+
+				<div><br>
+					<div>1. Sacar R$ <span id="result1"></span> e comprar as coisas evitáveis com esse dinheiro.
+						Quando acabar, acabou </div>
+					<div>2. Correr para criar uma renda extra de R$ <span id="result2"></span> </div>
+					<div>3. Cadastrar transferência automática mensal de R$ <span id="result3"></span> para a
+						conta poupança </div>
+					<div>4. No segundo mês, faça uma reunião com o gerente do seu banco e direcione esse valor para
+						investimentos 50% liquidez diária e 50% liquidez mensal</div><br>
+					<div class="text-center" style="outline: 1.5px solid red; padding:5px">
+						<div>ANTES E DEPOIS DA MENTORIA FINANCEIRA</div>
+						<div>Antes, você viajaria em quantos meses? <span id="result4"></span></div>
+						<div>Agora você vai viajar em… <span id="result5"></span></div>
+						<small class="form-text text-muted">*Se o resultado acima for negativo, significa que antes você
+							nunca seria capaz de viajar</small>
+					</div>
+				</div>
+
+				<script>
+
+					const moneyRemaining = document.getElementById("money-remaining");
+					moneyRemaining.innerHTML = 300;
+
+					const monthSave = document.getElementById("month-save");
+					monthSave.innerHTML = 600;
+
+					const monthsToTravel = document.getElementById("months-to-travel");
+					monthsToTravel.innerHTML = 3;
+
+
+					const result1 = document.getElementById("result1");
+					result1.innerHTML = 111;
+
+					const result2 = document.getElementById("result2");
+					result2.innerHTML = 222;
+
+					const result3 = document.getElementById("result3");
+					result3.innerHTML = 333;
+
+					const result4 = document.getElementById("result4");
+					result4.innerHTML = 444;
+
+					const result5 = document.getElementById("result5");
+					result5.innerHTML = 555;
+
+
+
+					document.querySelector(".finantial-freedom1").addEventListener("submit", submitForm1);
+					document.querySelector(".finantial-freedom2").addEventListener("submit", submitForm2);
+					document.querySelector(".finantial-freedom3").addEventListener("submit", submitForm3);
+					document.querySelector(".finantial-freedom4").addEventListener("submit", submitForm4);
+					document.querySelector(".finantial-freedom5").addEventListener("submit", submitForm5);
+
+					let gastosDebitoNaoEvitaveis = 0;
+					let gastosDebitoEvitaveis = 0;
+					let gastosCreditoNaoEvitaveis = 0;
+					let gastosCreditoEvitaveis = 0;
+
+
+					function submitForm1(e) {
+
+						e.preventDefault();
+						document.querySelectorAll('input[type="number1"]').forEach(el => gastosDebitoNaoEvitaveis += +el.value);
+						document.querySelector('.finantial-freedom1').value = gastosDebitoNaoEvitaveis;
+						gastosDebitoNaoEvitaveis = gastosDebitoNaoEvitaveis;
+						console.log(gastosDebitoNaoEvitaveis);
+						alert("formulario 1 enviado!");
+					}
+
+					function submitForm2(e) {
+
+						e.preventDefault();
+						document.querySelectorAll('input[type="number2"]').forEach(el => gastosDebitoEvitaveis += +el.value);
+						document.querySelector('.finantial-freedom2').value = gastosDebitoEvitaveis;
+						console.log(gastosDebitoEvitaveis);
+						alert("formulario 2 enviado!");
+					}
+
+					function submitForm3(e) {
+
+						e.preventDefault();
+						document.querySelectorAll('input[type="number3"]').forEach(el => gastosCreditoNaoEvitaveis += +el.value);
+						document.querySelector('.finantial-freedom4').value = gastosCreditoNaoEvitaveis;
+						console.log(gastosCreditoNaoEvitaveis);
+						alert("formulario 3 enviado!");
+					}
+
+					function submitForm4(e) {
+
+						e.preventDefault();
+						document.querySelectorAll('input[type="number4"]').forEach(el => gastosCreditoEvitaveis += +el.value);
+						document.querySelector('.finantial-freedom3').value = gastosCreditoEvitaveis;
+						console.log(gastosCreditoEvitaveis);
+						alert("formulario 4 enviado!");
+					}
+
+					function submitForm5(e) {
+
+						e.preventDefault();
+						const monthlyPayment = document.querySelector(".answer01").value; // Qual é o seu salário mensal?
+						const saves = parseFloat(document.querySelector(".answer02").value); // Quanto dinheiro guardado você possui?
+						const debts = parseFloat(document.querySelector(".answer03").value); // Você possui alguma dívida? Quanto você deve?
+						const tripValue = document.querySelector(".answer04").value; // Quanto você precisa para viajar?
+						const extraMoney = document.querySelector(".answer05").value; // Você é capaz de gerar qual renda extra por mês?
+						const nonAvoidableCosts = document.querySelector(".answer06").value; // Custos não evitáveis
+
+						// const avoideblesDebit = document.querySelector(".answer07").value; // Evitáveis Débito
+						// const avoideblesCredit = document.querySelector(".answer08").value; // Evitáveis Crédito
+						// const avoideblesTotal = avoideblesCredit + avoideblesDebit; // Total evitáveis
+						// const avoideblesYouWillSave = percentOfavoideblesAbleToSave * avoideblesTotal // Total de evitáveis que você vai economizar
+						// const percentOfavoideblesAbleToSave = document.querySelector(".answer10").value; // Quantos % dos evitáveis você pode economizar?
+						// percentOfavoideblesAbleToSave = percentOfavoideblesAbleToSave / 100;
+						// const avoideblesYouCanSpent = (1 - percentOfavoideblesAbleToSave) * avoideblesTotal; // Total de evitáveis que você vai poder gastar
+
+						alert("formulario 5 enviado!");
+						console.log(saves, debts, saves - debts);
+					}
+
+
+				</script>
+
+				<br><br>
+			</article>
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<ul class="copyright">
+				<li>&copy; <a href="https://www.instagram.com/free.igor/">FreeIgor</a></li>
+				<li>Design: <a href="https://arthurbritto.github.io/">Arthur Britto </a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script class="forms-script"></script>
+
+</body>
 
 </body>
 
