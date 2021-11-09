@@ -1,17 +1,18 @@
 import * as THREE from "./three.module.js";
 class Controller {
-    constructor(object, fire) {
+    constructor(object, fire, tweenX, tweenY) {
         this._inputController = new ControllerInputListener();
         this._object = object;
         this._objectMesh = object.getMesh();
         this._radians = 1 * (Math.PI / 180);
         this._fire = fire;
         this._velocity = new THREE.Vector3(0, 0, -0.25);
-
+        this.tweenX = tweenX;
+        this.tweenY = tweenY;
     }
 
     updateController() {
-        this._objectMesh.position.add(this._velocity);
+       this._objectMesh.position.add(this._velocity);
 
         let keys = this._inputController._keys;
         if (keys.left) {
@@ -24,9 +25,10 @@ class Controller {
         }
         if (keys.up) {
             this._objectMesh.position.add(new THREE.Vector3(0, 1, 0).multiplyScalar(-this._velocity.z));
+
         }
         if (keys.down) {
-            this._objectMesh.position.add(new THREE.Vector3(0, -1, 0).multiplyScalar(-this._velocity.z));
+           this._objectMesh.position.add(new THREE.Vector3(0, -1, 0).multiplyScalar(-this._velocity.z));
 
         }
         if (keys.space) {
@@ -51,16 +53,16 @@ class ControllerInputListener {
 
     _onKeyDown(e) {
         switch (e.keyCode) {
-            case 87: // w
+            case 38: // ArrowUp
                 this._keys.up = true;
                 break;
-            case 65: // a
+            case 37: // ArrowLeft
                 this._keys.left = true;
                 break;
-            case 83: // s
+            case 40: // ArrowDown
                 this._keys.down = true;
                 break;
-            case 68: // d
+            case 39: // ArrowRight
                 this._keys.right = true;
                 break;
             case 32: //space
@@ -71,16 +73,16 @@ class ControllerInputListener {
 
     _onKeyUp(e) {
         switch (e.keyCode) {
-            case 87: // w
+            case 38: // ArrowUp
                 this._keys.up = false;
                 break;
-            case 65: // a
+            case 37: // ArrowLeft
                 this._keys.left = false;
                 break;
-            case 83: // s
+            case 40: // ArrowDown
                 this._keys.down = false;
                 break;
-            case 68: // d
+            case 39: // ArrowRight
                 this._keys.right = false;
                 break;
             case 32:
