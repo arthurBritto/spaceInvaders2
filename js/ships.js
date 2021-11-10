@@ -92,6 +92,8 @@ class SpawnBotShips extends Ship {
                 this._botPool.push(spawn[0]);
                 this._botShipPool.push(spawn[1]);
             }
+        } else {
+            throw new Error("Model not loaded");
         }
     }
 
